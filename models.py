@@ -82,7 +82,7 @@ class Player:
             try:
                 attack = int(input("Choose your attack - wizard(1), warrior(2), or rogue(3): "))
                 if attack not in ALLOWED_ATTACKS:
-                    raise ValueError("Invalid choice. Please enter a number from 1-3.")
+                    print("Invalid choice. Please enter a number from 1-3.")
                 break
             except ValueError as val:
                 print(val)
@@ -106,7 +106,7 @@ class Player:
             try:
                 defense = int(input("Choose your attack - wizard(1), warrior(2), or rogue(3): "))
                 if defense not in ALLOWED_ATTACKS:
-                    raise ValueError("Invalid choice. Please enter a number from 1-3.")
+                    print("Invalid choice. Please enter a number from 1-3.")
                 break
             except ValueError as val:
                 print(val)
