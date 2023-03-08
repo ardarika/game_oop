@@ -105,6 +105,7 @@ def play():
         except exceptions.EnemyDown:
             player.score += (5 * score_multiplier)
             level += 1
+            enemy = models.Enemy(lives_multiplier)
             print(f'LEVEL {level}')
             print(f'Your lives: {player.lives}\nEnemy lives: {level * lives_multiplier}')
 
